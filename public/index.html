@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="main.css">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
@@ -12,6 +13,84 @@
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+<!--    <div id="app2">-->
+<!--      <click-counter></click-counter>-->
+<!--    </div>-->
     <!-- built files will be auto injected -->
+
+<!--    <div id="shopping-list">-->
+<!--      <div class="header">-->
+<!--        <h1>{{ header.toLocaleUpperCase() }}</h1>-->
+<!--        <button v-if="state === 'default'" class="btn btn-primary" @click="changeState('edit')">Add Item</button>-->
+<!--        <button v-else class="btn btn-cancel" @click="changeState('default')">Cancel Adding Item</button>-->
+<!--      </div>-->
+<!--      <div v-if="state === 'edit'" class="add-item-form">-->
+<!--        <input v-model="newItem" type="text" placeholder="Add an item" @keyup.enter="saveItem">-->
+<!--        <button class="btn btn-primary" :disabled="newItem.length === 0" @click="saveItem">Save Item</button>-->
+<!--      </div>-->
+<!--      <ul>-->
+<!--        <li v-for="item in reversedItems" class="priority" :class="[item.purchased ? 'strikeout' : '']" @click="togglePurchased(item)">{{ item.label }}</li>-->
+<!--      </ul>-->
+<!--      <p v-if="items.length === 0">Nice job! You've bought all your items.</p>-->
+<!--      <a :href="newItem" target="_blank">Dynamic Link</a>-->
+<!--    </div>-->
+
+<!--    <script src="https://unpkg.com/vue"></script>-->
+<!--    <script type="text/x-template" id="click-counter-template">-->
+<!--    <button @click="count++">{{count}}</button>-->
+<!--</script>-->
+<!--    <script>-->
+<!--      const shoppingList = new Vue({-->
+<!--        el: '#shopping-list',-->
+<!--        data: {-->
+<!--          state: 'default',-->
+<!--          header: 'shopping list app',-->
+<!--          newItem: '',-->
+<!--          items: [-->
+<!--            {-->
+<!--              label: '10 party hats',-->
+<!--              purchased: false,-->
+<!--              highPriority: false,-->
+<!--            },-->
+<!--            {-->
+<!--              label: '2 board games',-->
+<!--              purchased: true,-->
+<!--              highPriority: false,-->
+<!--            },-->
+<!--            {-->
+<!--              label: '20 cups',-->
+<!--              purchased: false,-->
+<!--              highPriority: true,-->
+<!--            },-->
+<!--          ]-->
+<!--        },-->
+<!--        computed: {-->
+<!--          reversedItems() {-->
+<!--            return this.items.slice(0).reverse();-->
+<!--          },-->
+<!--          characterCount(){-->
+<!--            return this.newItem.length;-->
+<!--          }-->
+<!--        },-->
+<!--        methods: {-->
+<!--          saveItem() {-->
+<!--            this.items.push({-->
+<!--              label: this.newItem,-->
+<!--              purchased: false,-->
+<!--            });-->
+<!--            this.newItem = '';-->
+<!--          },-->
+<!--          changeState: function(newState) {-->
+<!--            this.state = newState;-->
+<!--            this.newItem = '';-->
+<!--          },-->
+<!--          togglePurchased: function(item) {-->
+<!--            item.purchased = !item.purchased;-->
+<!--          }-->
+<!--        }-->
+<!--      })-->
+<!--    </script>-->
+
+<!--    <script src="vueComponentExample.js">  </script>-->
   </body>
 </html>
